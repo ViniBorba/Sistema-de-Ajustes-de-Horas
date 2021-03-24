@@ -1,0 +1,67 @@
+html, body{ /*Resetar e defirir fundo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #29537A;
+}
+
+body{
+    background: #4A246B;
+    display: grid; /*criar o grid*/
+    grid-template-columns: 1fr; /*Uma coluna*/
+    grid-template-rows: 20vh 10vh 50vh 20vh; /*4 linhas*/
+    grid-gap: 5px; /*Distancia entre os grid*/
+    justify-items: center; /*Coloca elemetos do grid no centro horizontal*/
+    align-items: center; /*Cola elentos do grid no centro vertical*/
+    
+}
+
+header{
+    background: #9932CC;
+    width: 98%;
+    height: 98%;
+}
+
+#login{
+    background: #B59CDE;
+    width: 95%;
+    height: 95%;
+    text-align: center;
+    
+}
+
+#informaContent{
+    background: #B59CDE;
+    width: 95%;
+    height: 95%;  
+}
+
+footer{
+    background: #9932CC;
+    width: 98%;
+    height: 98%;
+}
+
+#espaco{
+
+}
+
+.semAcesso{
+    background-color: darkgray;
+    margin: 5px;
+    text-decoration-line: none;
+}
+
+p{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+a{
+    text-decoration: none;
+}

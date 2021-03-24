@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>SHA Sistema de Ajustes de Horas</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesHome.css">    
+    </head>
+    <body>
+        <header>
+        </header>
+        <div id="login">
+            <p>Usuário Logado</p>
+            <section id="espaco">
+                <form id="formAcesso" name="formAcesso">
+                    <label for="email">Usuário: </label>
+                    <input id="usuario" type="text">
+                    <label for="perfil">Perfil: </label>
+                    <input id="perfil" type="text">
+                </form>
+            </section>
+        </div>
+        <div id="informaContent">
+            <!-- menu para navegar entre as páginas -->
+            <div class="menuLogin" id="menu">
+                <a href="inserirDados.html">Inserir</a>
+                <a href="editarDados.html">Editar</a>
+                <a href="visualizarDados.html">Visualizar</a>
+            </div>
+                
+                <span><h4>CONSULTAR</h4></span>
+                <!-- opcao para inserir uma nova informação -->
+                <div class="buscaaDados">
+                    <form name="consultarDados">
+                        <label for="entrada">Data</label>
+                        <input id="entrada" type="date" name="buscarData">
+                        
+                        <span>Motivo:</span>
+                        <select id="selecionaPerfil">
+                            <option value="conteudo">Prod Conteúdo</option>
+                            <option value="versionamento de Curso">Versionamento</option>
+                            <option value="capacitação">Capacitação</option>
+                            <option value="emprestimo">Empréstimo</option>
+                        </select>
+                        
+                        <button type="button" class="botao" onclick="validar()">Buscar</button>
+                    </form>
+                </div>
+                <div class="mostraDadosSalvos">
+                    <span><h4>LISTAR</h4></span>
+                    <!-- lista em TABELA com dados já inseridos. Vai ter algo pra voltar os dados já inseridos -->
+                    <table>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora Entrada</th>
+                            <th>Hora Saída</th>
+                            <th>Total Horas</th>
+                            <th>Justificativa</th>
+                            <th>Opções</th>
+                        </tr>
+                        <tr>
+                            <th>Receber Dta</th>
+                            <th>Receber H</th>
+                            <th>Receber H</th>
+                            <th>Total H</th>
+                            <th>Justifica</th>
+                            <th><button onclick="apagarDaTabela()">Apagar</button> <a href="#">editar</a></th>
+                        </tr>
+                        <tr>
+                            <th>Receber Dta</th>
+                            <th>Receber H</th>
+                            <th>Receber H</th>
+                            <th>Total H</th>
+                            <th>Justifica</th>
+                            <th><button onclick="apagarDaTabela()">Apagar</button> <a href="#">editar</a></th>
+                        </tr>
+                        <tr>
+                            <th>Receber Dta</th>
+                            <th>Receber H</th>
+                            <th>Receber H</th>
+                            <th>Total H</th>
+                            <th>Justifica</th>
+                            <th><button onclick="apagarDaTabela()">Apagar</button> <a href="#">editar</a></th>
+                        </tr>
+                        <tr>
+                            <th>Receber Dta</th>
+                            <th>Receber H</th>
+                            <th>Receber H</th>
+                            <th>Total H</th>
+                            <th>Justifica</th>
+                            <th><button onclick="apagarDaTabela()">Apagar</button> <a href="#">editar</a></th>
+                        </tr>
+                    </table>    
+                </div>
+                
+            <button onclick="enviarParaAnalisar()">Enviar para analisar</button>
+        </div>
+        <footer></footer>
+        <script src="jsScript.js"></script>
+    </body>
+</html>
