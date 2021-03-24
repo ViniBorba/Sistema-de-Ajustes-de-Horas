@@ -20,9 +20,10 @@ function validar(){
 
 function validarDataSaida(){
     var dataBuscada = consultarDados.buscarDataSaida;
+    var dataBuscada2 = consultarDados.buscarDataEntrada;
     
-    if(dataBuscada.value == ""){
-        alert("Informe uma data de saida");
+    if(dataBuscada.value == "" || dataBuscada2.value == ""){
+        alert("Informe uma data de saida e uma data de entrada");
         dataBuscada.focus();
     }
 }
